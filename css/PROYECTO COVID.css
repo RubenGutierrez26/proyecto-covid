@@ -113,10 +113,10 @@ tr:hover td{
 	padding: 2em;
 	background-color: #0F6094;
 	font-family: century gothic;
-	font-size: 2em;
 	text-align: center;
 	color:white;
 	border-radius: 3em;
+	font-size: 1.6em;
 	
 
 }
@@ -136,7 +136,7 @@ tr:hover td{
 hr{
 	margin-top: 50px;
 	color: #0F6094;
-
+	
 }
 
 .contNO{
@@ -144,8 +144,15 @@ hr{
 	border-radius: 3em;
 	background-color: #0F6094;
 	height: 10em;
-	width: 50em;
-	padding: 1em;
+	width: 50%;
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+}
+select{
+	width: 80%;
 }
 
 
@@ -160,6 +167,7 @@ hr{
 .botonesfinales{
 	text-align: center;
 	padding-top: 3em;
+
 }
 .paginaprincipalbotonfinal{
 	font-family: century gothic;
@@ -201,8 +209,22 @@ hr{
 
 @media screen and (max-width:800px){
 	div{
-		width: 90%;
+		width: 50%;
 	}
+	.contNO{
+
+		font-size:2vw;
+	}
+	.respuestas{
+	
+		font-size: 3.5vw;
+	
+	
+
+	}
+
+
+
 }
 
 
