@@ -207,6 +207,7 @@ select{
 
 
 
+
 @media screen and (max-width:800px){
 	div{
 		width: 50%;
@@ -222,7 +223,9 @@ select{
 	
 
 	}
-
+	.text{
+	width: 80%
+}
 
 
 }
