@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Encuesta COVID</title>
+	<link href="css/PROYECTO COVID.css" rel="stylesheet" type="text/css">
+	
+</head>
+<body>
+	<div>
+		<form  action="PROYECTO COVID PARTE2.html">
+			<h1>Encuesta Salud Mental-Parte 1</h1>
+			<fieldset>
+			<p>A continuación usted responderá una serie de preguntas relacionadas a factores sociodemográficos, laborales y relacionados a la infección por COVID-19.</p>
+			</fieldset>
+			<fieldset>
+				<label for="Genero" class="separado">Genero*</label>
+				<br><br>
+				<input type="radio" required name="Genero" value="Femenino">Femenino  
+				<br>
+				<input type="radio" required name="Genero" value="Masculino">Masculino 
+				
+			</fieldset>
+			<fieldset>
+				<label for="Estado civil" class="separado"> Estado civil *</label><br><br>
+				<input type="radio" name="EstadoCivil" value="soltero" required>Soltero (a) <br>
+				
+				<input type="radio" name="EstadoCivil" value="casado" required>Casado (a) <br>
+				
+				<input type="radio" name="EstadoCivil" value="viudo" required>Viudo (a) <br>
+				
+				<input type="radio" name="EstadoCivil" value="divorciado" required>Divorciado (a) <br>
+				
+				<input type="radio" name="EstadoCivil" value="conviviente" required>Conviviente <br>
+				
+			</fieldset>
+			<fieldset>
+				<label for="Edad" class="separado"> Edad *</label>
+				<br><br>
+				<input type="text" placeholder="Tu respuesta" name="edad" pattern="[0-9]{1,3}" required>
+				
+			</fieldset>
+			<fieldset>
+				<label for="Número de hijos" class="separado"> Número de hijos *</label>
+				<br><br>
+				<input type="text" placeholder="Tu respuesta" pattern="[0-9]{1,2}" required name="numhijos">
+				
+			</fieldset>
+			<fieldset>
+				<label for="Distrito de residencia" class="separado"> Distrito de residencia*</label>
+				<br><br>
+				<select name="Distrito" id="" required>
+					<option selected value="0" disabled> Elige una opción </option>
+					<option value="Ancon">Ancon</option>
+					<option value="Ate">Ate</option>
+					<option value="Barranco">Barranco</option>
+					<option value="Bellavista">Bellavista</option>
+					<option value="Breña">Breña</option>
+					<option value="Callao">Callao</option>
+					<option value="Carabayllo">Carabayllo</option>
+					<option value="Carmen de la Legua">Carmen de la Legua</option>
+					<option value="Cercado de Lima">Cercado de Lima</option>
+					<option value="Chaclacayo">Chaclacayo</option>
+					<option value="Chorrillos">Chorrillos</option>
+					<option value="Cieneguilla">Cieneguilla</option>
+					<option value="Comas">Comas</option>
+					<option value="El Agustino">El Agustino</option>
+					<option value="Independencia">Independencia</option>
+					<option value="Jesús María">Jesús María</option>
+					<option value="La Molina">La Molina</option>
+					<option value="La Perla">La Perla</option>
+					<option value="La Punta">La Punta</option>
+					<option value="La Victoria">La Victoria</option>
+					<option value="Lince">Lince</option>
+					<option value="Los Olivos">Los Olivos</option>
+					<option value="Lurin">Lurín</option>
+					<option value="Lurigancho">Lurigancho</option>
+					<option value="Magdalena del Mar">Magdalena del Mar</option>
+					<option value="Miraflores">Miraflores</option>
+					<option value="Pachacamac">Pachacamac</option>
+					<option value="Pucusana">Pucusana</option>
+					<option value="Pueblo Libre">Pueblo Libre</option>
+					<option value="Puente Piedra">Puente Piedra</option>
+					<option value="Punta Hermosa">Punta Hermosa</option>
+					<option value="Punta Negra">Punta Negra</option>
+					<option value="Rimac">Rimac</option>
+					<option value="San Bartolo">San Bartolo</option>
+					<option value="San Borja">San Borja</option>
+					<option value="San Isidro">San Isidro</option>
+					<option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+					<option value="San Juan de Miraflores">San Juan de Miraflores</option>
+					<option value="San Luis">San Luis</option>
+					<option value="San Martín de Porres">San Martín de Porres</option>
+					<option value="San Miguel">San Miguel</option>
+					<option value="Santa Anita">Santa Anita</option>
+					<option value="Santa Maria del Mar">Santa María del Mar</option>
+					<option value="Santa Rosa">Santa Rosa</option>
+					<option value="Santiago de Surco">Santiago de Surco</option>
+					<option value="Surquillo">Surquillo</option>
+					<option value="Ventanilla">Ventanilla</option>
+					<option value="Villa el Salvador">Villa el Salvador</option>
+					<option value="Villa Maria del Triunfo">Villa María del Triunfo</option>
+				</select>
+				
+			</fieldset>
+			<fieldset>
+				<label for="Ocupacion" class="separado"> Ocupación *</label>
+				<br><br>
+				<input type="radio" name="Ocupacion" required value="medico asistente">Médico asistente  <br>
+				<input type="radio" name="Ocupacion" required value="medico residente">Médico residente
+				
+			</fieldset>
+			<fieldset>
+				<label for="Especialidad" class="separado"> Cual es su especialidad?*</label>
+				<br><br>
+				<select name="Especialidad" id="">
+					<option selected value="0" disabled> Elige una opción </option>
+					<option value="Cardiologia">Cardiología</option>
+					<option value="Cirugia Cabeza y Cuello">Cirugía Cabeza y Cuello</option>
+					<option value="Cirugia Cardiovascular">Cirugía Cardiovascular</option>
+					<option value="Cirugia General y Laparoscopica">Cirugía General y Laparoscópica</option>
+					<option value="Cirugia Oncologica<">Cirugía Oncológica</option>
+					<option value="Cirugia Pediatrica">Cirugía Pediátrica</option>
+					<option value="Dermatologia">Dermatología</option>
+					<option value="Electrofisiologia Cardiaca">Electrofisiología Cardiaca</option>
+					<option value="Endocrinologia">Endocrinología</option>
+					<option value="Endocrinologia Pediatrica y Genetica">Endocrinología Pediatríca y Genética</option>
+					<option value="Gastroenterologia">Gastroenterología</option>
+					<option value="Geriatria">Geriatria</option>
+					<option value="Ginecologia y Obstetricia">Ginecologia y Obstetricia</option>
+					<option value="Hematologia">Hematología</option>
+					<option value="Medicina Interna">Medicina Interna</option>
+					<option value="Nefrologia">Nefrología</option>
+					<option value="Neumologia Pediatrica">Neumología Pediátrica</option>
+					<option value="Neurocirugia">Neurocirugía</option>
+					<option value="Neurologia">Neurología</option>
+					<option value="Nutricion">Nutricíon</option>
+					<option value="Oftalmologia">Oftalmología</option>
+					<option value="Oncologia">Oncología</option>
+					<option value="Otorrinolaringologia">Otorrinolaringología</option>
+					<option value="Pediatria">Pediatría</option>
+					<option value="Psiquiatria">Psiquiatría</option>
+					<option value="Traumatologia">Traumatología</option>
+					<option value="Urologia General y Oncologia">Urología General y Oncología</option>
+				</select>	
+			
+			</fieldset> 
+			<fieldset>
+				<label for="sede" class="separado"> ¿En qué sede hospitalaria labora?*</label>
+				<br><br>
+				<select name="sedehospitales" id="">
+					<option selected value="0" disabled> Elige una opción </option>
+					<option value="Hospital Cayetano Heredia (HCH)">Hospital Cayetano Heredia (HCH)</option>
+					<option value="Hospital Nacional Arzobispo Loayza (HNAL)">Hospital Nacional Arzobispo Loayza (HNAL)</option>
+					<option value='Instituto Nacional de Salud Mental "Honorio Delgado- Hideyo Noguchi" (INSM)'>Instituto Nacional de Salud Mental "Honorio Delgado- Hideyo Noguchi" (INSM)</option>
+					<option value="Instituto Nacional de Salud del Niño (INSN)">Instituto Nacional de Salud del Niño (INSN)</option>
+					<option value="Hospital Nacional Edgardo Rebagliati Martins">Hospital Nacional Edgardo Rebagliati Martins</option>
+					<option value="Instituto Nacional Materno Perinatal de Lima">Instituto Nacional Materno Perinatal de Lima</option>
+					<option value="Instituto Nacional Cardiovascular (INCOR)">Instituto Nacional Cardiovascular (INCOR)</option>
+					<option value="Centro de Salud/Posta de Salud">Centro de Salud/Posta de Salud</option>
+				</select>
+				
+			</fieldset>
+			<fieldset>
+				<label for="departamento en que labora" class="separado"> Departamento en el que labora la mayor parte del tiempo (puede marcar más de uno) *</label>
+				<br><br>
+					<input type="checkbox" name="departamentolaboral" value="Pre-triaje">Pre-triaje
+					<br>
+					<input type="checkbox" name="departamentolaboral" value="Triaje COVID-19">Triaje COVID-19
+					<br>
+					<input type="checkbox" name="departamentolaboral" value="Triaje NO COVID-19">Triaje NO COVID-19
+					<br>
+					<input type="checkbox" name="departamentolaboral" value="Emergencias COVID-19">Emergencias COVID-19
+					<br>
+					<input type="checkbox" name="departamentolaboral" value="Emergencias NO COVID-19">Emergencias NO COVID-19
+					<br>
+					<input type="checkbox" name="departamentolaboral" value="Hospitalizacion COVID-19">Hospitalización COVID-19
+					<br>
+					<input type="checkbox" name="departamentolaboral" value="Hospitalizacion NO COVID-19">Hospitalización NO COVID-19
+					<br>
+					<input type="checkbox" name="departamentolaboral" value="Radiologia">Radiología
+					<br>
+					<input type="checkbox" name="departamentolaboral" value="Sala de operaciones">Sala de operaciones
+					<br>
+					<input type="checkbox" name="departamentolaboral" value="Telemedicina">Telemedicina
+					<br>
+					<input type="checkbox" name="departamentolaboral" value="Otro">Otro:
+					<input type="text">	
+					
+			</fieldset>
+			<fieldset>
+				<label for="frecuencia de contacto" class="separado"> ¿Qué tan frecuentemente tiene contacto con pacientes con COVID-19?*</label>
+				<br><br>
+				<input type="radio" name="frecuenciaContacto" required value="Todos los dias">Todos los días
+				<br>
+				<input type="radio" name="frecuenciaContacto" required value="4-6 dias de la semana">4-6 días de la semana
+				<br>
+				<input type="radio" name="frecuenciaContacto" required value="1-3 dias de la semana">1-3 días de la semana
+				<br>
+				<input type="radio" name="frecuenciaContacto" required value="Nunca">Nunca
+				
+
+			</fieldset>
+			<fieldset>
+				<label for="Años de experiencia" class="separado"> Años de experiencia desde su colegiatura como médico*</label>
+				<br><br>
+				<input type="text" placeholder="Tu respuesta" pattern="[0-9]{1,2}" required name="aniosexperiencia">
+				
+			</fieldset>
+			
+			<fieldset>
+					<label for="Estado Laboral" class="separado"> Estado Laboral*</label>
+					<br><br>
+
+					<input type="radio" name="EstadoLaboral" required value="Presencial">Presencial
+					<br>
+					<input type="radio" name="EstadoLaboral" required value="En aislamiento en casa">En aislamiento en casa
+					<br>
+					<input type="radio" name="EstadoLaboral" required value="En aislamiento hospitalizado">En aislamiento hospitalizado
+					<br>
+					<input type="radio" name="EstadoLaboral" required value="Licencia por ser poblacion vulnerable">Licencia por ser población vulnerable
+					
+			</fieldset>
+			<fieldset>
+					<label for="Horas de trabajo por día" class="separado">Horas de trabajo por día*</label>
+					<br><br>
+					<input type="radio" name="HorasTrabajoxDia" required value="No aplica">No aplica
+					<br>
+					<input type="radio" name="HorasTrabajoxDia" required value="0-4 horas">0-4 horas
+					<br>
+					<input type="radio" name="HorasTrabajoxDia" required value="5-8 horas">5-8 horas
+					<br>
+					<input type="radio" name="HorasTrabajoxDia" required value="9-12 horas">9-12 horas
+					<br>
+					<input type="radio" name="HorasTrabajoxDia" required value="13-16 horas">13-16 horas
+					<br>
+					<input type="radio" name="HorasTrabajoxDia" required value="17 o mas horas">17 o más horas
+					
+			</fieldset>
+			<fieldset>
+					<label for="Días de descanso a la semana" class="separado">Días de descanso a la semana*</label>
+					<br><br>
+					<input type="radio" name="DiasDescansoxSemana" required value="No aplica">No aplica
+					<br>
+					<input type="radio" name="DiasDescansoxSemana" required value="0">0
+					<br>
+					<input type="radio" name="DiasDescansoxSemana" required value="1">1
+					<br>
+					<input type="radio" name="DiasDescansoxSemana" required value="2">2
+					<br>
+					<input type="radio" name="DiasDescansoxSemana" required value="3 o mas">3 o más
+					
+					
+			</fieldset>
+			<fieldset>
+					<label for="contrato hospitalario" class="separado">¿Qué tipo de contrato hospitalario tiene?*</label>
+					<br><br>
+					<input type="radio"  name="contratoHospitalario" required value="Servicio CAS">Servicio CAS
+					<br>
+					<input type="radio" name="contratoHospitalario" required value="Servicio por terceros">Servicio por terceros
+					<br>
+					<input type="radio" name="contratoHospitalario" required value="Nombrado">Nombrado
+					<br>
+					<input type="radio" name="contratoHospitalario" required value="Otros"> Otros
+					<input type="text">	
+					
+					
+			</fieldset>
+			<fieldset>
+					<label for="situacion actual" class="separado">¿Usted considera que la situación actual por la pandemia por COVID-19 está afectando su economía?*</label>
+					<br><br>
+					<input type="radio" name="situacionActual" required value="Si">Sí
+					<br>
+					<input type="radio" name="situacionActual" required value="No">No
+					
+					
+			</fieldset>
+			<fieldset>
+					<label for="satisfaccion con el equipo de proteccion" class="separado">¿Se encuentra satisfecho con el equipo de protección personal que le brinda la sede hospitalaria?*</label>
+					<br><br>
+					<input type="radio" name="satisfaccionConEquipoProteccion" required value="Si">Sí
+					<br>
+					<input type="radio" name="satisfaccionConEquipoProteccion" required value="No">No
+					<br>
+					<input type="radio" name="satisfaccionConEquipoProteccion" required value="Parcialmente">Parcialmente
+					
+			</fieldset>
+			<fieldset>
+				<label for="sintomas ultimos 15 dias" class="separado"> ¿Usted ha presentado alguno de los siguientes síntomas en los últimos 15 días? Puede marcar más de una alternativa. *</label>
+				<br><br>
+					<input type="checkbox" value="tos" name="sintomas">Tos
+					<br>
+					<input type="checkbox" value="Dolor de garganta" name="sintomas">Dolor de garganta
+					<br>
+					<input type="checkbox" value="Fiebre o SAT" name="sintomas">Fiebre o SAT
+					<br>
+					<input type="checkbox" value="Dificultad respiratoria" name="sintomas">Dificultad respiratoria
+					<br>
+					<input type="checkbox" value="Anosmia/Hiposmia" name="sintomas">Anosmia/Hiposmia
+					<br>
+					<input type="checkbox" value="Congestion/Secrecion nasal" name="sintomas">Congestión/Secreción nasal
+					<br>
+					<input type="checkbox" value="Cansancio/Fatiga" name="sintomas">Cansancio/Fatiga
+					<br>
+					<input type="checkbox" value="Diarrea" name="sintomas">Diarrea
+					<br>
+					<input type="checkbox" value="Mialgias" name="sintomas">Mialgias
+					<br>
+					<input type="checkbox" value="Otro" name="sintomas">Otro:
+					<input type="text">	
+					
+			</fieldset>
+			<fieldset>
+					<label for="diagnostico" class="separado">¿Ha sido diagnosticado con COVID-19? (Por prueba rápida o molecular)*</label>
+					<br><br>
+					<input type="radio" name="diagnostico" required value="Si">Sí
+					<br>
+					<input type="radio" name="diagnostico" required value="No">No
+					
+			</fieldset>
+			<fieldset>
+					<label for="discriminacion" class="separado">¿Ha percibido discriminación por ser personal de salud?*</label>
+					<br><br>
+					<input type="radio" name="discriminacion" required value="Si">Sí
+					<br>
+					<input type="radio" name="discriminacion" required value="No">No
+					
+			</fieldset>
+			<fieldset>
+					<label for="distancia fisica" class="separado">¿Ha tomado distancia física de su familia para cuidarlos del COVID-19*</label>
+					<br><br>
+					<input type="radio" name="distanciaFisica" required value="Si">Sí
+					<br>
+					<input type="radio" name="distanciaFisica" required value="No">No
+					
+			</fieldset>
+			<fieldset>
+					<label for="familiar fallecido" class="separado">¿Algún familiar ha fallecido por COVID-19?*</label>
+					<br><br>
+					<input type="radio" name="familiarFallecido" required value="Si">Sí
+					<br>
+					<input type="radio" name="familiarFallecido" required value="No">No
+					
+			</fieldset>
+			<fieldset>
+					<label for="familiar infectado" class="separado">¿Algún familiar se ha infectado de COVID-19?*</label>
+					<br><br>
+					<input type="radio" name="familiarInfectado" required value="Si">Sí
+					<br>
+					<input type="radio" name="familiarInfectado" required value="No">No
+					
+			</fieldset>
+			<fieldset>
+				<label for="sufre de enfermedades" class="separado"> ¿Sufre de alguna de las siguientes enfermedades? Puede marcar varias alternativas.*</label>
+				<br><br>
+					<input type="checkbox" value="ninguna" name="enfermedades">Ninguna
+					<br>
+					<input type="checkbox" value="Hipertension" name="enfermedades">Hipertensión arterial
+					<br>
+					<input type="checkbox" value="Obesidad" name="enfermedades">Obesidad
+					<br>
+					<input type="checkbox" value="Diabetes mellitus" name="enfermedades">Diabetes mellitus
+					<br>
+					<input type="checkbox" value="Asma bronquial" name="enfermedades">Asma bronquial
+					<br>
+					<input type="checkbox" value="EPOC" name="enfermedades">EPOC
+					<br>
+					<input type="checkbox" value="Enfermedad reumatologica" name="enfermedades">Enfermedad reumatológica
+					<br>
+					<input type="checkbox" value="Enfermedad reumatologica" name="enfermedades">Otro:
+					<input type="text">	
+					
+			</fieldset>
+			<fieldset>
+				<label for="problemas de sueño" class="separado">¿En los últimos 15 días ha presentado problemas de sueño? *</label>
+				<br><br>
+					<input type="radio" name="problemasDeSuenio" required value="Si">Sí
+					<br>
+					<input type="radio" name="problemasDeSuenio" required value="No">No
+					
+			</fieldset>
+			<fieldset>
+				<label for="enfermedad psiquiátrica" class="separado"> ¿Ha sido diagnosticado de alguna enfermedad psiquiátrica? Puede marcar varias alternativas.*</label>
+				<br><br>
+					<input type="checkbox" value="ninguna" name="enfermedadpsiq">Ninguna
+					<br>
+					<input type="checkbox" value="Depresion" name="enfermedadpsiq">Depresión
+					<br>
+					<input type="checkbox" value="Ansiedad" name="enfermedadpsiq">Ansiedad
+					<br>
+					<input type="checkbox" value="Trastorno obsesivo compulsivo" name="enfermedadpsiq">Trastorno obsesivo compulsivo
+					<br>
+					<input type="checkbox" value="Trastorno bipolar" name="enfermedadpsiq">Trastorno bipolar
+					<br>
+					<input type="checkbox" value="Otro" name="enfermedadpsiq">Otro:
+					<input type="text">	
+					
+			</fieldset>
+			<fieldset>
+				<label for="tratamiento farmacologico" class="separado">Para su enfermedad psiquiátrica, ¿actualmente está tomando algún tratamiento farmacológico? *</label>
+				<br><br>
+					<input type="radio" name="tratamientoFarmacologico" required value="No aplica">No aplica
+					<br>
+					<input type="radio" name="tratamientoFarmacologico" required value="Si">Sí
+					<br>
+					<input type="radio" name="tratamientoFarmacologico" required value="No">No
+					
+			</fieldset>
+			<fieldset>
+				<label for="salud mental afectada" class="separado">¿Usted considera que la situación actual por la pandemia por COVID-19 está afectando su salud mental?*</label>
+				<br><br>
+					<input type="radio" name="saludMentalAfectada" required value="Si">Sí
+					<br>
+					<input type="radio" name="saludMentalAfectada" required value="No">No
+					
+					
+			</fieldset>
+			<input type="submit" value="Siguiente" class="boton">
+			
+		</form>
+	</div>
+</body>
+</html>

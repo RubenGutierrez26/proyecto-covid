@@ -1,0 +1,193 @@
+header{
+	font-family: cambria;
+	font-size: 50px;
+	color: white;
+	background-color: #0F6094;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+}
+p{
+	font-family: century gothic;
+	font-size: 18px;
+}
+h1{
+	color:#0F6094;
+	font-size:30px;
+	font-family: century gothic;
+	text-align: center;
+}
+
+h2{
+	color:#0F6094;
+	font-size:50px;
+	font-family: century gothic;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+.doctores{
+	width: 90%;
+	height: 25vw;
+	padding-bottom: 3em;
+
+}
+.alumnos{
+	width: 90%;
+	height: 20vw;
+	padding-bottom: 3em;
+    
+}
+.contenidoo{
+	/*background-color: skyblue;*/
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 45em;
+	width: 60%;
+	height: 0.1vw;
+}
+.centrado{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+.imagenesdoc{
+	float: left;
+	width: 50%;
+}
+
+
+
+
+
+
+
+
+.imagenesalum{
+	float: left;
+	width: 33.3%;
+
+}
+
+
+.contenido2{
+	/*background-color: green;*/
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%; 
+	padding-bottom: 35em; 
+	text-align: center;
+	padding-top: 5em;
+}
+#cuadro{
+	margin-right: auto;
+	margin-left: auto;
+	border-style: inset;
+	border-width: 0.17em;
+	width: 18em;
+	padding: 1em;
+	font-size: 1em;
+
+	
+}
+
+.estilonombre{
+	font-size: 30px;
+	color: #0F6094;
+}
+
+/*--------BOTONES------------------*/
+.principall{
+	text-align: center;
+	padding-top: 3em;
+}
+a{
+	font-family: century gothic;
+	font-size: 16px;
+	background-color: white;
+	background: transparent;
+	color: black;
+	border: none;
+	padding: 10px 32px;
+	text-align: center;
+    display: inline-block;
+    width: 15em;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+
+	
+}
+a:hover{
+	
+	color: white;
+	background-color:#0F6094;
+	transition: all .1s;
+}
+
+
+
+
+
+
+/*-------------------PAGINA PRINCIPAL EFECTO ACORDEON-----------------*/
+
+*{
+   margin: 0px;
+   padding: 0px; 
+}
+
+.acordeon input{
+	display: none;
+}
+
+.acordeon_titulo{
+	display: block;
+	padding: 10px;
+	background: rgb(255,255,255);
+	color: #0F6094;
+	font-size: 50px;
+	cursor: pointer;
+	font-family: "century gothic";
+	margin: 0px 70px;
+}
+
+.acordeon_contenido{
+	height: 0;
+	overflow: hidden;
+	font-size: 18px;
+	font-family: "century gothic";
+	margin: 0px;  
+}
+
+
+
+.acordeon input:checked ~ .acordeon_contenido {
+   height: auto;
+   margin: 15px 70px;
+   text-align: justify;
+}
+
+.acordeon_pie{
+	background-color: rgba(0,128,128,0.2);
+	height: 80px;
+}
+
+input{
+	width: 450px;
+	height: 35px;
+	background-color: rgba(0,0,128,0.8);
+	color: rgb(255,255,255);
+	font-size: 15px;
+	margin: 0px 100px;
+	margin-top: 22px;
+}
+

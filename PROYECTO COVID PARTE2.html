@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Encuesta COVID</title>
+	<link href="css/PROYECTO COVID.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/PROYECTO COVID.js"></script>
+
+</head>
+<body>
+	
+	<div>
+		<form id="dataForm" onsubmit="guardar()" action="PROYECTO COVID RESPUESTAS.html">
+			<h1 id="tamaño">Encuesta Salud Mental-Parte 2</h1>
+			<fieldset id="borde">
+		        
+		        <p id="colorrojo">*Obligatorio</p>
+			    <p>A continuación usted responderá una serie de preguntas relacionadas a factores sociodemográficos, laborales y relacionados a la infección por COVID-19.</p>
+			
+
+		    </fieldset>
+		    <fieldset id="tablas">
+		        <p>Durante las ultimas 2 semanas, ¿qué tan seguido ha tenido molestias debido a los siguientes problemas? *</p>
+		        <table border="">
+					<thead class="centrado">
+						<tr>
+		                    <th></th>
+		                    <th>0 días</th>
+		                    <th>1-3 días de la semana</th>
+		                    <th>4-6 días de la semana</th>
+		                    <th>Todos los días</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+		                    <td>Poco interés o placer en hacer cosas</td>
+		                    <td class="botones"><input type="radio" name="rad1" required value=0></td>
+		                    <td class="botones"><input type="radio" name="rad1" required value=1></td>
+		                    <td class="botones"><input type="radio" name="rad1" required value=2></td>
+		                    <td class="botones"><input type="radio" name="rad1" required value=3></td>
+						</tr>
+						<tr>
+		                    <td>Se ha sentido sentido decaído(a), triste o sin esperanzas</td>
+		                    <td class="botones"><input type="radio" name="rad2" required value=0></td>
+		                    <td class="botones"><input type="radio" name="rad2" required value=1></td>
+		                    <td class="botones"><input type="radio" name="rad2" required value=2></td>
+		                    <td class="botones"><input type="radio" name="rad2" required value=3></td>
+						</tr>
+						<tr>
+		                    <td>Ha tenido dificultad para quedarse o permanecer dormido(a), o ha dormido demasiado</td>
+		                    <td class="botones"><input type="radio" name="rad3" required value=0></td>
+		                    <td class="botones"><input type="radio" name="rad3" required value=1></td>
+		                    <td class="botones"><input type="radio" name="rad3" required value=2></td>
+		                    <td class="botones"><input type="radio" name="rad3" required value=3></td>
+		                </tr>
+		                <tr>
+		                    <td>Se ha sentido cansado(a) o con poca energía</td>
+		                    <td class="botones"><input type="radio" name="rad4" required value=0></td>
+		                    <td class="botones"><input type="radio" name="rad4" required value=1></td>
+		                    <td class="botones"><input type="radio" name="rad4" required value=2></td>
+		                    <td class="botones"><input type="radio" name="rad4" required value=3></td>
+		                </tr>
+		                <tr>
+		                    <td>Sin apetito o ha comido en exceso</td>
+		                    <td class="botones"><input type="radio" name="rad5" required value=0></td>
+		                    <td class="botones"><input type="radio" name="rad5" required value=1></td>
+		                    <td class="botones"><input type="radio" name="rad5" required value=2></td>
+		                    <td class="botones"><input type="radio" name="rad5" required value=3></td>
+		                </tr>
+		                <tr>
+		                    <td>Se ha sentido mal con usted mismo(a) - o que es un fracaso o que ha quedado mal con usted mismo(a) o con su familia</td>
+		                    <td class="botones"><input type="radio" name="rad6" required value=0></td>
+		                    <td class="botones"><input type="radio" name="rad6" required value=1></td>
+		                    <td class="botones"><input type="radio" name="rad6" required value=2></td>
+		                    <td class="botones"><input type="radio" name="rad6" required value=3></td>
+		                </tr>
+		                <tr>
+		                    <td>Ha tenido dificultad para poner atención o concentrarse en las cosas, tales como leer o ver televisión</td>
+		                    <td class="botones"><input type="radio" name="rad7" required value=0></td>
+		                    <td class="botones"><input type="radio" name="rad7" required value=1></td>
+		                    <td class="botones"><input type="radio" name="rad7" required value=2></td>
+		                    <td class="botones"><input type="radio" name="rad7" required value=3></td>
+		                </tr>
+		                <tr>
+		                    <td>¿Se ha movido o hablado tan lento que otras personas podrían haberlo notado? o lo contrario - muy inquieto(a) o 
+		                        agitado(a) que ha estado moviéndose mucho más de lo normal
+		                    </td>
+		                    <td class="botones"><input type="radio" name="rad8" required value=0></td>
+		                    <td class="botones"><input type="radio" name="rad8" required value=1></td>
+		                    <td class="botones"><input type="radio" name="rad8" required value=2></td>
+		                    <td class="botones"><input type="radio" name="rad8" required value=3></td>
+		                </tr>
+		                <tr>
+		                    <td>Pensamientos de que estaría mejor muerto(a) o de hacerse daño de alguna manera</td>
+		                    <td class="botones"><input type="radio" name="rad9" required value=0></td>
+		                    <td class="botones"><input type="radio" name="rad9" required value=1></td>
+		                    <td class="botones"><input type="radio" name="rad9" required value=2></td>
+		                    <td class="botones"><input type="radio" name="rad9" required value=3></td>
+						</tr>
+					</tbody>
+				</table>
+			</fieldset>
+
+			<fieldset>
+				<label for="preg2" class="separado"> Si marcó cualquiera de los problemas, ¿qué tanta dificultad le han dado estos problemas para hacer su trabajo, encargarse de las tareas del hogar, o llevarse bien con otras personas?</label>
+				<br><br>
+				<input type="radio" name="preg2" required value="No ha sido dificil">No ha sido difícil
+				<br>
+				<input type="radio" name="preg2" required value="Un poco dificil">Un poco difícil
+				<br>
+				<input type="radio" name="preg2" required value="Muy dificil">Muy difícil
+				<br>
+				<input type="radio" name="preg2" required value="Extremadamente dificil">Extremadamente difícil
+				<br>
+				<input type="radio" name="preg2" required value="No aplica, no he tenido molestias.">No aplica, no he tenido molestias.
+				<br>
+				<br>
+		    </fieldset>
+		    
+		    <fieldset >
+		        <p>Si marcó cualquiera de los problemas, ¿qué tanta dificultad le han dado estos problemas para hacer su trabajo, encargarse de las tareas del hogar, o llevarse bien con otras personas? *</p>
+		        <table border="">
+
+					<thead class="centrado">
+						<tr>
+		                    <th></th>
+		                    <th>Sí</th>
+		                    <th>No</th>
+		            
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+		                    <td>Me da miedo alejarme de mi casa.</td>
+		                    <td ><input type="radio" name="ra1" required value="1"></td>
+		                    <td><input type="radio" name="ra1" required value="0"></td>
+						</tr>
+						<tr>
+		                    <td>Me he sentido aturdido o confundido.</td>
+		                    <td><input type="radio" name="ra2" required value="1"></td>
+		                    <td><input type="radio" name="ra2" required value="0"></td>
+						</tr>
+						<tr>
+		                    <td>Tengo miedo de conocer gente nueva.</td>
+		                    <td><input type="radio" name="ra3" required value="1"></td>
+		                    <td><input type="radio" name="ra3" required value="0"></td>
+		                </tr>
+		                <tr>
+		                    <td>He sentido que me falta el aire o me ahogo.</td>
+		                    <td><input type="radio" name="ra4" required value="1"></td>
+		                    <td><input type="radio" name="ra4" required value="0"></td>
+		                </tr>
+		                <tr>
+		                    <td>Tengo miedo de hacer el ridículo y sentirme humillado o avergonzado </td>
+		                    <td><input type="radio" name="ra5" required value="1"></td>
+		                    <td><input type="radio" name="ra5" required value="0"></td>
+		                </tr>
+		                <tr>
+		                    <td>He sentido miedo sin motivo</td>
+		                    <td><input type="radio" name="ra6" required value="1"></td>
+		                    <td><input type="radio" name="ra6" required value="0"></td>
+		                </tr>
+		                <tr>
+		                    <td>Me da miedo estar en lugares altos.</td>
+		                    <td><input type="radio" name="ra7" required value="1"></td>
+		                    <td><input type="radio" name="ra7" required value="0"></td>
+		                </tr>
+		                <tr>
+		                    <td>He sentido dolor o presión en el pecho</td>
+		                    <td><input type="radio" name="ra8" required value="1"></td>
+		                    <td><input type="radio" name="ra8" required value="0"></td>
+		                </tr>
+		                <tr>
+		                    <td>Me incomodaría entrar o salir de un lugar lleno de gente</td>
+		                    <td><input type="radio" name="ra9" required value="1"></td>
+		                    <td><input type="radio" name="ra9" required value="0"></td>
+		                </tr>
+		                <tr>
+		                    <td>Tiendo a sentirme nervioso</td>
+		                    <td><input type="radio" name="ra10" required value="1"></td>
+		                    <td><input type="radio" name="ra10" required value="0"></td>
+		                </tr>
+		                <tr>
+		                    <td>Tengo miedo de dar exámenes o tener una entrevista de trabajo.</td>
+		                    <td><input type="radio" name="ra11" required value="1"></td>
+		                    <td><input type="radio" name="ra11" required value="0"></td>
+		                </tr>
+		                <tr>
+		                    <td>Me he sentido agitado o alterado</td>
+		                    <td><input type="radio" name="ra12" required value="1"></td>
+		                    <td><input type="radio" name="ra12" required value="0"></td>
+		                </tr>
+		                <tr>
+		                    <td>Con facilidad me siento asustado, con temor o miedo.</td>
+		                    <td><input type="radio" name="ra13" required value="1"></td>
+		                    <td><input type="radio" name="ra13" required value="0"></td>
+		                </tr>
+		                <tr>
+		                    <td>Me he sentido angustiado, con los nervios de punta.</td>
+		                    <td><input type="radio" name="ra14" required value="1"></td>
+		                    <td><input type="radio" name="ra14" required value="0"></td>
+		                </tr>
+		                <tr>
+		                    <td>Me es dificil hablar con otras personas, tengo temor, me cuesta iniciar una conversacion o no se me ocurre qué decir</td>
+		                    <td><input type="radio" name="ra15" required value="1"></td>
+		                    <td><input type="radio" name="ra15" required value="0"></td>
+		                </tr>
+		                <tr>
+		                    <td>Me siento inseguro, como si me fuera a caer</td>
+		                    <td><input type="radio" name="ra16" required value="1"></td>
+		                    <td><input type="radio" name="ra16" required value="0"></td>
+		                </tr>
+		                <tr>
+		                    <td>Tengo escalofrios frecuentemente</td>
+		                    <td><input type="radio" name="ra17" required value="1"></td>
+		                    <td><input type="radio" name="ra17" required value="0"></td>
+		                </tr>
+		                <tr>
+		                    <td>Generalmente me siento cómodo, sosegado y apacible.</td>
+		                    <td><input type="radio" name="ra18" required value="1"></td>
+		                    <td><input type="radio" name="ra18" required value="0"></td>
+		                </tr>
+		                <tr>
+		                    <td>Me incomoda que me observen cuando trabajo, escribo, camino o tengo algun objeto que se me puede caer.</td>
+		                    <td><input type="radio" name="ra19" required value="1"></td>
+		                    <td><input type="radio" name="ra19" required value="0"></td>
+		                </tr>
+		                <tr>
+		                    <td>Tengo sensaciones de adormecimiento u hormigueo en el cuerpo</td>
+		                    <td><input type="radio" name="ra20" required value="1"></td>
+		                    <td><input type="radio" name="ra20" required value="0"></td>
+		                </tr>
+					</tbody>
+				</table>
+			</fieldset>
+
+
+			<fieldset>
+				<label for="preg3" class="separado"> ¿Considera que necesita apoyo psiquiátrico o psicológico? *</label>
+				<br><br>
+				<input type="radio" name="preg3" required value="Si">Sí
+				<br>
+				<input type="radio" name="preg3" required value="No">No
+				
+    		</fieldset>
+
+    		<input type="button" value="Atras" class="boton" onclick='window.open("PROYECTO COVID PARTE1.html","_self")'>
+    		<input type="submit" value="Siguiente" class="boton">
+		</form>
+	</div>
+	<script type="text/javascript">
+		/*--------------------------------------Guardar datos en la BD de la PRIMERA parte de la encuesta-------------------------------------------*/
+		function guardar() {
+			let xmlhttp = new XMLHttpRequest();
+			xmlhttp.open("POST", "https://encuesta-api26.herokuapp.com/encuestas");
+			xmlhttp.setRequestHeader("Content-Type", "application/json");
+			let obj = {
+				"preg1": getParameterByName('Genero'),
+				"preg2": getParameterByName('EstadoCivil'),
+				"preg3": getParameterByName('edad'),
+				"preg4": getParameterByName('numhijos'),
+				"preg5": getParameterByName('Distrito'),
+				"preg6": getParameterByName('Ocupacion'),
+				"preg7": getParameterByName('Especialidad'),
+				"preg8": getParameterByName('sedehospitales'),
+				"preg9": getParameterByName('departamentolaboral'),
+				"preg10": getParameterByName('frecuenciaContacto'),
+				"preg11": getParameterByName('aniosexperiencia'),
+				"preg12": getParameterByName('EstadoLaboral'),
+				"preg13": getParameterByName('HorasTrabajoxDia'),
+				"preg14": getParameterByName('DiasDescansoxSemana'),
+				"preg15": getParameterByName('contratoHospitalario'),
+				"preg16": getParameterByName('situacionActual'),
+				"preg17": getParameterByName('satisfaccionConEquipoProteccion'),
+				"preg18": getParameterByName('sintomas'),
+				"preg19": getParameterByName('diagnostico'),
+				"preg20": getParameterByName('discriminacion'),
+				"preg21": getParameterByName('distanciaFisica'),
+				"preg22": getParameterByName('familiarFallecido'),
+				"preg23": getParameterByName('familiarInfectado'),
+				"preg24": getParameterByName('enfermedades'),
+				"preg25": getParameterByName('problemasDeSuenio'),
+				"preg26": getParameterByName('enfermedadpsiq'),
+				"preg27": getParameterByName('tratamientoFarmacologico'),
+				"preg28": getParameterByName('saludMentalAfectada')
+			}; 
+			let jsonData = JSON.stringify(obj); 
+			xmlhttp.send(jsonData); 
+			
+			sleep(3000);
+			console.log(jsonData);
+			
+		};
+	</script>
+	
+
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
